@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: 
+  description: BitCamp
+  version: 0.1.9
+
+servers:
+  - url: https://
+    description: production server
+  - url: http://localhost:3000/api
+    description: local server
+paths:
+  /feedbacks:
+    get:
+      tags:
+        - Feedback
+      responses:
+        "200":
+          description: get all Feedback
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+    post:
+      tags:
+        - Feedback
+      requestBody:
+        description: add new Feedback
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                group:
+                  type: string
+                  example: 0020
+                feedback:
+                  type: string
+                  example: კმაყოფილი ვარ
+      responses:
+        "200":
+          description: new Feedback add successfully
