@@ -5,7 +5,7 @@ info:
   version: 0.1.9
 
 servers:
-  - url: https://
+  - url: https://bitcamp-feedback-api-production.up.railway.app/
     description: production server
   - url: http://localhost:3000/api
     description: local server
@@ -36,7 +36,7 @@ paths:
               properties:
                 group:
                   type: string
-                  example: 0020
+                  example: "0020"
                 feedback:
                   type: string
                   example: კმაყოფილი ვარ
