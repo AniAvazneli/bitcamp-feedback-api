@@ -17,4 +17,4 @@ app.use(cors())
 app.use("/api", cors(), feedbackRouter);
 app.use("/", ...swaggerMiddleware());
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
