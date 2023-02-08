@@ -8,7 +8,7 @@ export const getAllFeedbacks = async (req, res) => {
 
 export const createFeedback = async (req, res) => {
   const { body } = req;
-
+  console.log(req,"req");
   const validator = await feedbackSchema(body);
   const { value, error } = validator.validate(body);
 

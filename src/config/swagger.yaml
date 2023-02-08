@@ -5,9 +5,9 @@ info:
   version: 0.1.9
 
 servers:
-  - url: https://bitcamp-feedback-api-production.up.railway.app/
+  - url: https://bitcamp-feedback-api-production.up.railway.app/api
     description: production server
-  - url: http://localhost:3000/api
+  - url: http://localhost:3001/api
     description: local server
 paths:
   /feedbacks:
